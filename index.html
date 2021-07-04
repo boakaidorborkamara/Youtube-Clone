@@ -14,247 +14,632 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand navbar-light bg-white sticky-top">
             <div class="row">
-                <div class="col-4">
-                    <button class="navbar-toggler-lg mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="col-lg-3 col-md-2 col-3">
+                    <button class="navbar-toggler-lg mx-2 border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <a class="navbar-brand" href="https://www.youtube.com/">
+                    <!-- brand logo  -->
+                    <a class="navbar-brand" href="index.html">
                         <img src="./img/logo.png" alt="Youtube logo" id="youtube-logo">
                     </a>
                 </div>
-                <div class="col-4">
+        
+                <!-- search box  -->
+                <div class="col-lg-6 col-md-8 col-6">
                     <form class="d-flex">
-                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input type="text" class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="pt-2 pb-2 ps-3 pe-3 fs-5">
+                            <i class="fas fa-microphone"></i>
+                        </div>
                     </form>
+                    
                 </div>
-                <div class="col-4">
-                    <i class="fas fa-video-plus"></i>
-                    <i class="fas fa-th"></i>
-                    <i class="fas fa-bell"></i>
+                <div class="col-lg-3 col-md-2 col-3 d-flex  flex-row justify-content-end align-items-center">
+                    <div class="ms-3">
+                        <i class="fas fa-video-plus ms-2 fs-4"></i>
+                    </div>
+                    <div class="ms-3">
+                        <i class="fas fa-th ms-2 fs-4"></i>
+                    </div>
+                    <div class="ms-3">
+                        <i class="fas fa-bell ms-2 fs-4"></i>
+                    </div>
+                    
+                    <!-- user profile picture  -->
+                    <div id="profile-picture" class=" ms-3  ">
+                        <img src="./img/profile.jpg" class=" img-fluid w-25%-lg w-50%-md rounded-circle" alt="profile picture" id="try">
+                        <!-- <p>try</p> -->
+                    </div>
                 </div>
             </div>
         </nav>
+
         <main>
             <div class="d-flex">
                 <!-- side nav with icons -->
-                <section class="p-3 d-flex-colum">
-                    <!-- <div><i class="fal fa-home-alt fs-1"></i></div> -->
-                    <div class="p-2"><i class="fas fa-compass"></i></div>
-                    <div class="p-2"><i class="fas fa-compass"></i></div>
-                    <div class="p-2"><i class="fas fa-compass"></i></div>
-                    <div class="p-2"><i class="fas fa-compass"></i></div>
-                    <!-- <div></div>
-                    <div></div> -->
+                <section class="d-flex-row p-2 justify-content-evenly sticky-top">
+                    <div class="mb-4">
+                        
+                        <i class="fas fa-home fs-4 text-danger small"></i>
+                        
+                        <p class="small">
+                            <small class="text-danger">Home</small> 
+                        </p>
+                    </div>
+                
+                    <div class="mb-4">
+                
+                        <i class="fas fa-compass fs-4 text-muted"></i>
+                        
+                        <p class="small">
+                            <small>Explore</small> 
+                        </p>
+                    </div>
+                
+                    <div class="mb-4">
+                        
+                        <i class="fas fa-film fs-4 text-muted"></i>
+                        
+                        <p class="small">
+                            <small>Subscription</small> 
+                        </p>
+                    </div>
+                
+                    <div class="mb-3">
+                        
+                        <i class="fas fa-photo-video fs-4 text-muted"></i>
+                        
+                        <p class="small">
+                            <small>Library</small> 
+                        </p>
+                    </div>
+                    
                 </section>
                 
                 <!-- thumbnail section  -->
                 <section>
                     
                         <!-- suggestion bar -->
-                        <div class="py-3 border-top border-bottom">
-                            <button>Sales</button>
-                            <button>Desk</button>
-                            <button>Sales</button>
-                            <button>Desk</button>
-                            <button>Sales</button>
-                            <button>Desk</button>
-                            <button>Sales</button>
-                            <button>Desk</button>
+                        <div class="d-flex justify-content-evenly pt-2 border-top border-bottom">
+                            <p class="rounded-pill bg-light py-2 px-3 mx-2 border bg-dark text-white">All</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Live</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Crytocurrency</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Website</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Podcasts</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Sales</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Ambient Music</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Vlogging</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Travelling</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Men's Fashion</p>
+                            <p class="rounded-pill bg-light py-2 px-2 mx-2 border">Education</p>
+                            
                         </div>
 
-                        <!-- Video thumbnail section -->
-                        <div class="row py-4 bg-light">
-                            <div class="col">
+                         <!-- Video thumbnail section -->
+                         <div class="row py-4 bg-light px-3">
+                            <div class="col-3 mb-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
                                     <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+
+                            <div class="col-3 mb-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4" type="video/mp4">
+                                    </video>
                                     <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+
+                            <div class="col-3 mb-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
                                     <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+
+                            <div class="col-3 mb-4">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
                                     <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <!-- <img src="./img/youtubecover.jpeg" class="card-img-top" alt="..."> -->
+                                    <video controls poster="./img/africanwoman.jpg" width="100%">
+                                        <source src="./videos/What is a Function in Programming_.mp4"
+                                                type="video/mp4">
+                                                
+                                    </video>
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="d-flex">
+                                                <div class="w-25 rounded-circle">
+                                                    <img src="./img/profile.jpg" alt="channel profile pic" class="img-fluid rounded-circle">
+                                                </div>
+                                                
+                                                <div class="ms-3">
+                                                    <p  class=" fw-bold">
+                                                        <a href="" class="card-link">
+                                                            A Coder's Workshop- Home Office + Desk Tour
+                                                        </a>
+                                                    </p>
+                                                    <p class="small text-muted">ForestKnight
+                                                        <span><i class="fas fa-check-circle"></i></span><br>
+                                                    86k views - 6 years ago</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
                         </div>
-                        <div class="row mt-4">
-                            <div class="col">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
-                                            </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
-                                            </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
-                                            </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="./img/youtubecover.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div>
-                                                    <img src="" alt="channel profile pic">
-                                            </div>
-                                            <div>
-                                                <a href="">
-                                                    A Coder's Workshop- Home Office + Desk Tour
-                                                </a>
-                                                <p>ForestKnight</p>
-                                                <p>86k views . 1day ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     
                 </section>
             </div>
         </main>
     </div>
+
+    <!-- bootstrap js  -->
+    <script src="./javascript/bootstrap.min.js"></script>
 </body>
 </html>
 <!-- 
 
   
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</div> -->
+ 
